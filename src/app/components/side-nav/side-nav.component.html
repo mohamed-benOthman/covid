@@ -1,0 +1,18 @@
+<div class="bigContainer">
+  <div class="sideNav">
+    <div>
+      <div
+        *ngFor="let item of this.countries"
+        class="country"
+        (click)="navigate(item.name)"
+      >
+        {{ item.name }}
+        <img
+          src="{{ this.editLink(item.name) }}"
+          alt=" "
+          onError="this.src='https://img.icons8.com/color/32/000000/earth-planet.png'"
+        />
+      </div>
+    </div>
+  </div>
+</div>

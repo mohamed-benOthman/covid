@@ -1,0 +1,9 @@
+<div class="stati bg-asbestos left">
+  <i *ngIf="this.type == 'Deaths'" class="fas fa-skull"></i>
+  <i *ngIf="this.type == 'Confirmed'" class="fas fa-ambulance"></i>
+  <i *ngIf="this.type == 'Recovered'" class="fas fa-virus-slash"></i>
+  <div>
+    <b>{{ this.number }}</b>
+    <span>{{ this.description }}</span>
+  </div>
+</div>

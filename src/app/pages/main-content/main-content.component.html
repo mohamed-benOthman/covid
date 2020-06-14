@@ -1,0 +1,26 @@
+<div class="bigContainer">
+  <h3>{{ this.country }}</h3>
+  <div style="display: flex; flex-direction: row;">
+    <app-card
+      style="margin-right: 20px;"
+      class="card"
+      type="Confirmed"
+      [number]="this.nbConfirmed"
+      description="Confirmed"
+    ></app-card>
+    <app-card
+      style="margin-right: 20px;"
+      class="card"
+      type="Recovered"
+      [number]="this.nbRecovered"
+      description="Recovered"
+    ></app-card>
+    <app-card
+      class="card"
+      type="Deaths"
+      [number]="this.nbDeaths"
+      description="Deaths"
+    ></app-card>
+  </div>
+  <app-line-chart [data]="this.data"></app-line-chart>
+</div>
