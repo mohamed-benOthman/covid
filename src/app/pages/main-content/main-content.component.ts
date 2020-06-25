@@ -32,10 +32,10 @@ export class MainContentComponent implements OnInit {
       this.coronaService
         .getSummarybyCountry(this.country)
         .subscribe((res: any) => {
-          console.log(res[res.length - 1]);
-          this.nbConfirmed = res[res.length - 1].Confirmed;
-          this.nbDeaths = res[res.length - 1].Deaths;
-          this.nbRecovered = res[res.length - 1].Recovered;
+          console.log(res[res.length - 2]);
+          this.nbConfirmed = res[res.length - 2].Confirmed;
+          this.nbDeaths = res[res.length - 2].Deaths;
+          this.nbRecovered = res[res.length - 2].Recovered;
         });
       this.coronaService.getDayOne(this.country).subscribe((res: any) => {
         this.dataAux = res;

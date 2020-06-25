@@ -4,6 +4,7 @@ import { MainContentComponent } from "./pages/main-content/main-content.componen
 import { RefreshComponent } from "./pages/refresh/refresh.component";
 
 const routes: Routes = [
+  { path: "", redirectTo: "/tunisia", pathMatch: "full" },
   { path: ":country", component: MainContentComponent },
   {
     path: "test/refresh",

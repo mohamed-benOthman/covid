@@ -22,5 +22,6 @@
   }
 }
 .bigContainer {
-  overflow: scroll;
+  height: 100vh;
+  overflow-y: scroll;
 }
